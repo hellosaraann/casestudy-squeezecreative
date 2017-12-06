@@ -150,7 +150,7 @@ article, figcaption, figure, footer, header, main, nav, section {
   top: 0;
   left: 0;
   height: 100%;
-  width: 5em;
+  width: 4.375rem;
   z-index: 10;
 }
 
@@ -166,12 +166,10 @@ article, figcaption, figure, footer, header, main, nav, section {
   letter-spacing: .1em;
   white-space: nowrap;
   padding: 0;
-  z-index: 30;
-  display: block;
 }
 
 .site-title img {
-  padding: 1em;
+  padding: 1.3em;
   position: absolute;
   top: 0;
   left: 0;
@@ -182,8 +180,27 @@ article, figcaption, figure, footer, header, main, nav, section {
 
 .main-nav {
   border: 1px solid red;
-  display: inline-block;
-  margin-left: 5em;
+  margin-left: 4.375rem;
+}
+
+.nav-block {
+  background-color: #333674;
+  color: #4DB7C0;
+  display: block;
+  width: 4.375rem;
+  height: 4.375rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav-block i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.75rem;
+  margin: 0;
 }
 
 /* scrolling page */
