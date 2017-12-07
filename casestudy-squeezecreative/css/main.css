@@ -401,8 +401,6 @@ li.dropdown:hover ul {
 
 .main-gallery figure {
   border: 1px solid red;
-  max-width: 32.23em;
-  float: left;
   position: relative;
 }
 
