@@ -339,11 +339,6 @@ li.dropdown:hover ul {
 
 /* banner image */
 
-.banner-image section {
-  border: 1px solid blue;
-  position: relative;
-}
-
 .banner-image img {
   height: 100vh;
   width: 100%;
@@ -360,6 +355,52 @@ li.dropdown:hover ul {
   margin: 0 1rem;
 }
 
+.scroll-down {
+  display: block;
+  background-size: contain;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  border: 1px solid blue;
+  padding: 4rem;
+}
+
+.scroll-down a {
+  color: #fff;
+  border: 1px solid red;
+}
+
+.moving-arrow {
+  content: "";
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+  animation-name: arrows;
+  animation-duration: 1.5s;
+  animation-timing-function: initial;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-timing-function:
+}
+
+@@keyframes arrows {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-.5rem);
+}
+100% {
+  transform: translateY(-1rem)
+}
+}
 /* main content */
 /* main content — general */
 
