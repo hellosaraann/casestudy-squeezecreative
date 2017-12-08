@@ -363,13 +363,12 @@ li.dropdown:hover ul {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  border: 1px solid blue;
   padding: 4rem;
 }
 
 .scroll-down a {
   color: #fff;
-  border: 1px solid red;
+  padding: 0;
 }
 
 .moving-arrow {
@@ -383,6 +382,10 @@ li.dropdown:hover ul {
   animation-duration: 1.5s;
   animation-timing-function: initial;
   animation-iteration-count: infinite;
+  animation-delay: initial;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
 }
 
 @keyframes arrows {
@@ -391,11 +394,13 @@ li.dropdown:hover ul {
     transform: rotate(-45deg) translateY(0)
     translateX(0);
   }
-  50% {
-    transform: rotate(-45deg) translateY(.5rem) translateX(-50%);
+  90% {
+    transform: rotate(-45deg) translateY(1rem) translateX(-1rem);
+    opacity: 90%;
   }
   100% {
-    transform: rotate(-45deg) translateY(1rem) translateX(-100%);
+    transform: rotate(-45deg) translateY(2rem) translateX(-2rem);
+    opacity: 0;
   }
 
 }
