@@ -177,6 +177,7 @@ li.sub-menu-item {
   display: block;
   min-width: 12rem;
   margin: 1rem;
+  padding-bottom: 2rem;
 }
 
 .col-1-2 {
@@ -189,10 +190,6 @@ li.sub-menu-item {
 
 .col-1-4 {
   width: 20%;
-}
-
-.col-1-6 {
-  width: 16.66%;
 }
 
 /* side header title */
@@ -423,6 +420,10 @@ li.dropdown:hover ul {
   overflow: auto;
 }
 
+.main-content section {
+  margin: 2rem 0;
+}
+
 .main-content .container {
   padding: 1rem;
 }
@@ -532,6 +533,10 @@ div.main-content-text {
   background-color: black;
 }
 
+.logo-gallery h3 {
+  color: #fff;
+}
+
 .logo-gallery img {
   max-width: 10rem;
 }
@@ -559,6 +564,38 @@ div.main-content-text {
 
 .instagram {
   border: 1px solid blue;
+  background-color: #4DB7C0;
+  text-align: center;
+}
+
+.social-media-title {
+  padding: 1.5em 1em;
+}
+
+.instagram a {
+  display: block;
+  color: inherit;
+}
+
+.instagram h5 {
+  padding: 0;
+  margin: 0;
+}
+
+.instagram i {
+  color: #34347A;
+  display: block;
+  font-size: 2rem;
+}
+
+.page-footer .col-1-6 {
+  margin: 0;
+  padding: 0;
+}
+
+.col-1-6 {
+  width: 16.66%;
+  min-width: 1em;
 }
 
 /* footer — contact info */
