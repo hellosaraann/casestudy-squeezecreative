@@ -130,6 +130,16 @@ ul {
   padding: 0;
 }
 
+.sub-menu-item li {
+  font-weight: lighter;
+  padding-left: 1.5rem;
+}
+
+.sub-menu-item li:before {
+  content: "—";
+  padding: 0 .2rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -295,33 +305,17 @@ li.dropdown:after {
 
 /* main nav — dropdown menu */
 
-
-li.sub-menu-item {
-  font-weight: lighter;
-  position: relative;
-  line-height: 1;
-  padding: 1em 2em;
-  margin: 0;
-}
-
-li.sub-menu-item:before {
-  content: "—";
-  position: absolute;
-  top: 1em;
-  left: .75em;
-  color: #fff;
-}
-
 .dropdown ul {
   background-color: #4EB8C2;
+  padding: 1em;
   overflow: auto;
   display: block;
+  line-height: 1em;
   position: absolute;
   top: 2.75rem;
-  left: 0;
+  left: -1rem;
   width: 18rem;
   visibility: hidden;
-  padding: 1em;
 }
 
 .sub-menu-item a {
