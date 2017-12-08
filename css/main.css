@@ -378,28 +378,26 @@ li.dropdown:hover ul {
   border-bottom: 2px solid white;
   height: 1rem;
   width: 1rem;
-  margin: 0;
-  padding: 0;
   margin: auto;
-  transform: rotate(-45deg);
   animation-name: arrows;
   animation-duration: 1.5s;
   animation-timing-function: initial;
-  animation-delay: initial;
   animation-iteration-count: infinite;
-  animation-timing-function:
 }
 
-@@keyframes arrows {
-0% {
-  transform: translateY(0);
-}
-50% {
-  transform: translateY(-.5rem);
-}
-100% {
-  transform: translateY(-1rem)
-}
+@keyframes arrows {
+
+  0% {
+    transform: rotate(-45deg) translateY(0)
+    translateX(0);
+  }
+  50% {
+    transform: rotate(-45deg) translateY(.5rem) translateX(-50%);
+  }
+  100% {
+    transform: rotate(-45deg) translateY(1rem) translateX(-100%);
+  }
+
 }
 /* main content */
 /* main content — general */
