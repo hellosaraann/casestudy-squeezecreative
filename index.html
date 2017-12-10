@@ -51,7 +51,7 @@
         <div class="scrolling-page">
 
           <section class="banner-image container">
-            <h2>
+            <h2 class="col col-1">
               We’re <span class="biz-name">Squeeze Creative</span> —<br>
               a branding, graphic design and website studio in Surry Hills, Sydney.
             </h2>
@@ -65,10 +65,8 @@
           </section>
 
           <main class="main-content" id="sqz-content">
-            <div class="container main-content-text">
-              <div class="col col-1-2">
-                <h2>We do</h2>
-              </div>
+            <div class="container text-section">
+              <h2 class="col col-1-2">We do</h2>
               <div class="col col-1-2">
                 <p>
                   high-quality logos, brands and websites. We’ve helped hundreds of clients stand out from the competition since 2004. Our work is great and our prices are even better.
@@ -134,8 +132,8 @@
               </a>
             </section>
 
-            <article class="container main-content-text">
-              <h3 class="title-row-main-content">
+            <article class="container text-section">
+              <h3 class="col col-1">
                 Our Services
               </h3>
               <div class="col col-1-4">
@@ -156,12 +154,12 @@
               </div>
             </article>
 
-            <section class="main-content-img-100">
+            <section>
               <img src="https://squeezecreative.com.au/wp-content/uploads/2017/11/Squeeze-Entrance.jpg" alt="Image from Squeeze Creative office with a poster that reads 'hi!''">
             </section>
 
             <section class="logo-gallery container">
-              <h3>A few brands we've worked with</h3>
+              <h3 class="col col-1">A few brands we've worked with</h3>
               <img class="col col-1-4" src="https://squeezecreative.com.au/wp-content/uploads/2010/12/reebok-logo.svg" alt="Reebok logo">
               <img class="col col-1-4" src="https://squeezecreative.com.au/wp-content/uploads/2010/12/macquarie-logo.svg" alt="MacQuarie logo">
               <img class="col col-1-4" src="https://squeezecreative.com.au/wp-content/uploads/2017/11/ST-NSWGovt-2.svg" alt="NSW Gov State Transport logo">
@@ -185,8 +183,10 @@
             <section class="container instagram">
               <a href="https://www.instagram.com/squeeze_creative/" target="_blank">
                 <div class="social-media-title col col-1-6 container">
-                  <h5>Follow on</h5>
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <div>
+                    <h5>Follow on</h5>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </div>
                 </div>
 					    </a>
 
@@ -211,79 +211,87 @@
               </a>
             </section>
 
-            <section class="container contact-info">
-              <div class="col col-1-2">
-                <h3>Say hello</h3>
-              <address>
+            <section class="container contact-info text-section">
+              <h3 class="col col-1">Say hello</h3>
+              <address class="col col-1-2">
                 <ul>
-                  <li><a href="tel:0283992824">
-                    02 8399 2824</a>
-                  </li>
-                  <li><a href="mailto:hello@squeezecreative.com.au">
-                    hello@squeezecreative.com.au</a>
-                  </li>
+                  <a href="tel:0283992824">
+                    <li class="sub-menu-item">
+                      02 8399 2824
+                    </li>
+                  </a>
+                  <a href="mailto:hello@squeezecreative.com.au">
+                    <li class="sub-menu-item">
+                      hello@squeezecreative.com.au
+                    </li>
+                  </a>
                 </ul>
               </address>
-            </div>
-            <div class="col col-1-2">
               <address class="col col-1-2">
                 <p>Suite 109, 59 Marlborough St</p>
                 <p>Surry Hills, Sydney 2010</p>
               </address>
-            </div>
             </section>
 
-            <nav class="container complete-footer-nav">
-              <ul>
-                <li class="main-nav-item">Branding & Logo
+            <nav class="container complete-footer-nav text-section clearfix">
+
+              <div class="col col-1-4">
+                <h4 class="footer-nav-heading">Branding & Logo</h4>
+                <ul class="sub-menu">
+                  <a href="#!"><li class="sub-menu-item">Branding & Logos</li></a>
+                  <a href="#!"><li class="sub-menu-item">Corporate ID Guidelines</li></a>
+                  <a href="#!"><li class="sub-menu-item">Branded Collateral</li></a>
+                  <a href="#!"><li class="sub-menu-item">Brand Management</li></a>
+                  <a href="#!"><li class="sub-menu-item">Brand Refresh</li></a>
+                  <a href="#!"><li class="sub-menu-item">Digital Media</li></a>
+                </ul>
+              </div>
+
+                <div class="col col-1-4">
+                  <h4 class="footer-nav-heading">Web Design & Construction</h4>
                   <ul class="sub-menu">
-                    <li class="sub-menu-item">Branding & Logos</li>
-                    <li class="sub-menu-item">Corporate ID Guidelines</li>
-                    <li class="sub-menu-item">Branded Collateral</li>
-                    <li class="sub-menu-item">Brand Management</li>
-                    <li class="sub-menu-item">Brand Refresh</li>
-                    <li class="sub-menu-item">Digital Media</li>
+                    <a href="#!"><li class="sub-menu-item">Social Media</li></a>
+                    <a href="#!"><li class="sub-menu-item">Blog Design</li></a>
+                    <a href="#!"><li class="sub-menu-item">Website Interface Design</li></a>
+                    <a href="#!"><li class="sub-menu-item">Content Management</li></a>
+                    <a href="#!"><li class="sub-menu-item">Search Engine Optimisation</li></a>
+                    <a href="#!"><li class="sub-menu-item">Digital Newsletters & Flyers</li></a>
+                    <a href="#!"><li class="sub-menu-item">Print Media</li></a>
                   </ul>
-                </li>
-                <li class="main-nav-item">Web Design & Construction
+                </div>
+
+                <div class="col col-1-4">
+                  <h4 class="footer-nav-heading">Brochure & Flyer Design</h4>
                   <ul class="sub-menu">
-                    <li class="sub-menu-item">Social Media</li>
-                    <li class="sub-menu-item">Blog Design</li>
-                    <li class="sub-menu-item">Website Interface Design</li>
-                    <li class="sub-menu-item">Content Management</li>
-                    <li class="sub-menu-item">Search Engine Optimisation</li>
-                    <li class="sub-menu-item">Digital Newsletters & Flyers</li>
-                    <li class="sub-menu-item">Print Media</li>
+                    <a href="#!"><li class="sub-menu-item">Poster Design</li></a>
+                    <a href="#!"><li class="sub-menu-item">Stationery Design</li></a>
+                    <a href="#!"><li class="sub-menu-item">Magazine Design</li></a>
+                    <a href="#!"><li class="sub-menu-item">Press Advertising</li></a>
+                    <a href="#!"><li class="sub-menu-item">Other Services</li></a>
                   </ul>
-                </li>
-                <li class="main-nav-item">Brochure & Flyer Design
+                </div>
+
+                <div class="col col-1-4">
+                  <h4 class="footer-nav-heading">Other Services</h4>
                   <ul class="sub-menu">
-                    <li class="sub-menu-item">Poster Design</li>
-                    <li class="sub-menu-item">Stationery Design</li>
-                    <li class="sub-menu-item">Magazine Design</li>
-                    <li class="sub-menu-item">Press Advertising</li>
-                    <li class="sub-menu-item">Other Services</li>
+                    <a href="#!"><li class="sub-menu-item">Photography</li></a>
+                    <a href="#!"><li class="sub-menu-item">Video Production</li></a>
+                    <a href="#!"><li class="sub-menu-item">Illustration</li></a>
+                    <a href="#!"><li class="sub-menu-item">Art Direction</li></a>
+                    <a href="#!"><li class="sub-menu-item">Copywriting</li></a>
                   </ul>
-                </li>
-                <li class="main-nav-item">Photography
-                  <ul class="sub-menu">
-                    <li class="sub-menu-item">Video Production</li>
-                    <li class="sub-menu-item">Illustration</li>
-                    <li class="sub-menu-item">Art Direction</li>
-                    <li class="sub-menu-item">Copywriting</li>
-                  </ul>
-                </li>
-              </ul>
+                </div>
             </nav>
 
-            <section class="footer-footer">
-              <div class="social">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <section class="footer-footer text-section">
+              <div class="social col col-1-4">
+                <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#!"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
               </div>
-              <div class="footer-technical">
-                <p>© 2004–2017 Squeeze Creative Pty Ltd.</p>
-                <p>ABN: 43 145 023 589</p>
+              <div class="col col-1-4"></div>
+              <div class="site-info">
+                <p class="col col-1-4">© 2004–2017 Squeeze Creative Pty Ltd.</p>
+                <p class="col col-1-4">ABN: 43 145 023 589</p>
               </div>
             </section>
           </footer>
