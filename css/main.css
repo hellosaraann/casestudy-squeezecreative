@@ -164,7 +164,7 @@ li.main-nav-item {
 }
 
 li.sub-menu-item {
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .container-narrow {
@@ -173,23 +173,16 @@ li.sub-menu-item {
   overflow: auto;
 }
 
-.containter,
+.container,
 .container-wide {
   margin: 0;
   width: 100%;
   overflow: auto;
-  border: 1px solid magenta;
 }
 
 .col {
   float: left;
   display: block;
-}
-
-.col-1-2,
-.col-1-3,
-.col-1-4 {
-  border: 1px solid gray;
 }
 
 .col-1 {
@@ -251,6 +244,11 @@ li.sub-menu-item {
   right: 4.375rem;
   height: 4.375rem;
   z-index: 10;
+  transition: all .3s ease-in-out 0s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 
 .main-nav-item a {
@@ -265,8 +263,8 @@ li.sub-menu-item {
 
 .main-nav li {
   display: block;
-  padding: 1em;
-  margin: 1em;
+  padding: 1.5rem 1.5rem 1rem 1rem;
+  margin: 0;
 }
 
 .main-nav-item {
@@ -274,7 +272,7 @@ li.sub-menu-item {
 }
 
 li.dropdown {
-  padding-right: 1.25em;
+  padding-right: 2rem;
   position: relative;
 }
 
@@ -286,9 +284,22 @@ li.dropdown:after {
   border-right: .15em solid #222;
   transform: rotate(45deg);
   position: absolute;
-  right: 0;
-  top: 1rem;
+  right: .7rem;
+  top: 1.75rem;
 }
+
+li:hover.dropdown:after {
+  content: "";
+  height: .7em;
+  width: .7em;
+  border-bottom: .15em solid #4EB8C2;
+  border-right: .15em solid #4EB8C2;
+  transform: rotate(45deg);
+  position: absolute;
+  right: .7rem;
+  top: 1.75rem;
+}
+
 
 /* main nav — open nav button (top right) */
 
@@ -337,7 +348,7 @@ li.sub-menu-item:before {
   overflow: auto;
   display: block;
   position: absolute;
-  top: 2.75rem;
+  top: 4rem;
   left: 0;
   width: 18rem;
   visibility: hidden;
@@ -369,10 +380,12 @@ li.dropdown:hover ul {
 .banner-image h2 {
   position: absolute;
   display: block;
-  top: 10.5rem;
-  left: 19%;
-  font-size: 3rem;
-  width: 50%;
+  color: #222;
+  top: 7rem;
+  left: 15%;
+  font-size: 2.6rem;
+  font-weight: 300;
+  width: 60%;
 }
 
 .scroll-down {
@@ -426,8 +439,6 @@ li.dropdown:hover ul {
 /* main content — general */
 
 .main-content {
-  border: 1px solid yellow;
-
   color: #828282;
   overflow: auto;
 }
@@ -435,6 +446,11 @@ li.dropdown:hover ul {
 .main-content section {
   margin: 2rem 0;
 }
+
+.text {
+  padding: 0 8%;
+}
+
 
 .main-content h2 {
   color: #4EB8C2;
@@ -533,14 +549,22 @@ li.dropdown:hover ul {
 /* main content — logo gallery */
 
 .logo-gallery {
-  background-color: black;
+  background-color: #222;
+  padding: 7rem;
 }
 
 .logo-gallery h3 {
   color: #fff;
+  display: block;
+  padding: 0 0 5rem 0;
 }
 
-.logo-gallery img {
+.logos {
+  overflow: auto;
+}
+
+.logos img {
+  padding: 1rem 2rem;
 }
 
 
@@ -548,7 +572,6 @@ li.dropdown:hover ul {
 /* footer — general */
 
 .page-footer {
-  border: 1px solid red;
   line-height: 1;
   color: #fff;
   margin: 0;
