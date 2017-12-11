@@ -149,6 +149,7 @@ ul {
 
 a {
   text-decoration: none;
+  padding-bottom: .25rem;
 }
 
 .biz-name {
@@ -251,13 +252,16 @@ li.sub-menu-item {
     transition-delay: 0s;
 }
 
-.main-nav-item a {
-  border: none;
+li.main-nav-item {
   color: #222;
 }
 
-.main-nav-item a:hover {
+li.main-nav-item:hover {
   color: #4EB8C2;
+}
+
+.main-nav-item a {
+  color: inherit;
   border: none;
 }
 
@@ -290,6 +294,7 @@ li.dropdown:after {
 
 li:hover.dropdown:after {
   content: "";
+  color: #4EB8C2;
   height: .7em;
   width: .7em;
   border-bottom: .15em solid #4EB8C2;
@@ -486,7 +491,7 @@ li.dropdown:hover ul {
 
 .main-content a:hover {
   color: #4EB8C2;
-  border: none;
+  border-bottom: 1px transparent;
 }
 
 /* main content — main gallery */
@@ -581,6 +586,10 @@ li.dropdown:hover ul {
   color: #828282;
 }
 
+.page-footer a:hover {
+  color: #4DB7C0;
+}
+
 .page-footer h2,
 .page-footer h3,
 .page-footer h4 {
@@ -598,7 +607,8 @@ li.dropdown:hover ul {
   position: relative;
 }
 
-.instagram a {
+.instagram a,
+.instagram a:hover {
   color: #fff;
 }
 
@@ -631,6 +641,19 @@ li.dropdown:hover ul {
 
 .contact-info {
   background-color: #302F6C;
+}
+
+.contact-info li,
+.contact-info p {
+   font-style: normal;
+ }
+
+.contact-info a {
+  border-bottom: 1px solid #4DB7C0;
+}
+
+.contact-info a:hover {
+  border-bottom: 1px transparent;
 }
 
 /* footer — complete footer nav */
